@@ -26,7 +26,6 @@ import { Beer } from './beer.model';
 export class BeerListComponent {
   @Input() childBeerList: Beer[];
   @Output() clickSender = new EventEmitter();
-  @Output() soldPintsSender = new EventEmitter();
 
   filterByEmptiness: string = "allKegs";
 
@@ -36,10 +35,6 @@ export class BeerListComponent {
 
   editButtonHasBeenClicked(beerToEdit: Beer) {
     this.clickSender.emit(beerToEdit);
-  }
-
-  drinkButtonHasBeenClicked(beerToSell: Beer) {
-    this.soldPintsSender.emit(beerToSell);
   }
 
   subtractPints(index, number){
