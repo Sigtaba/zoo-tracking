@@ -4,7 +4,7 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'animal-list',
   template: `
-    <div class="container">
+    <div class="list-container">
       <select (change)="onChange($event.target.value)">
         <option value="allAnimals" selected="selected">All Animals</option>
         <option value="youngAnimals">Animals 2 &amp; under yrs old</option>
@@ -17,7 +17,7 @@ import { Animal } from './animal.model';
           <td class="header">Name:</td>
           <td class="header">Age:</td>
           <td class="header">Diet:</td>
-          <td class="header">Location in Zoo:</td>
+          <td class="header">Location:</td>
           <td class="header">Caretakers:</td>
           <td class="header">Sex:</td>
           <td class="header">Likes:</td>
