@@ -6,7 +6,7 @@
 Created on 07.07.2017
 
 ## Set Up & Installation:
-* Visit the following link: <https://sigtaba.github.io/zoo-tracking/> - *CSS Styling will not show on GH-Pages.
+* Visit the following link: <https://sigtaba.github.io/zoo-tracking/>
 
 OR you can:
 
@@ -17,7 +17,7 @@ OR you can:
 * enter the command gulp serve
 
 ## Bugs:
-CSS styling does not show on gh-pages
+No known bugs
 
 ## Support:
 If you experience any difficulties, feel free to contact any of the developer: Isabella Abatgis (abatgis@gmail.com)

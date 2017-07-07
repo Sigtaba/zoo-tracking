@@ -16,7 +16,7 @@ import { Animal } from './animal.model';
       <input #like type=text placeholder="Likes"/>
       <input #dislike type="text" placeholder="Dislikes"/>
     </div>
-    <button (click)="addAnimal(species.value,name.value,age.value,diet.value,location.value,caretakers.value,sex.value,like.value,dislike.value); name.value=''; species.value=''; age.value=''; diet.value=''; location.value=''; caretakers.value=''; sex.value=''; like.value=''; dislike.value='';">Add Animal</button>
+    <button (click)="addAnimal(species.value,name.value,age.value,diet.value,location.value,caretakers.value,sex.value,like.value,dislike.value); name.value=''; species.value=''; age.value=''; diet.value=''; location.value=''; caretakers.value=''; sex.value=''; like.value=''; dislike.value='';" id="bottom-button">Add Animal</button>
   `
 })
 
