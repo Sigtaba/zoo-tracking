@@ -1,5 +1,5 @@
 import {Pipe, PipeTransform} from '@angular/core';
-import { Beer } from './beer.model';
+import { Animal } from './animal.model';
 
 @Pipe({
   name: "emptiness",
@@ -9,8 +9,8 @@ import { Beer } from './beer.model';
 export class EmptinessPipe implements PipeTransform {
 
 
-  transform(input: Beer[], desiredEmptiness) {
-    var output: Beer[] = [];
+  transform(input: Animal[], desiredEmptiness) {
+    var output: Animal[] = [];
 
     if(desiredEmptiness === "emptyKegs") {
       for (var i = 0; i < input.length; i++) {

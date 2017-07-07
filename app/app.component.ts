@@ -1,32 +1,32 @@
 import { Component } from '@angular/core';
-import { Beer } from './beer.model';
+import { Animal } from './animal.model';
 
 @Component({
   selector: 'app-root',
   template: `
-    <h1>Beer me</h1>
-    <beer-list [childBeerList]="masterBeerList" (clickSender)="editBeer($event)" (soldPintsSender)="soldPints($event)"></beer-list>
-    <edit-beer [childSelectedBeer]="selectedBeer" (doneButtonClickedSender)="finishedEditing()"></edit-beer>
-    <new-beer (newBeerSender)="addBeer($event)"></new-beer>
+    <h1>Zoo Tracking</h1>
+    <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)" (soldPintsSender)="soldPints($event)"></animal-list>
+    <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
+    <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
     `
 })
 
 export class AppComponent {
 
-  masterBeerList: Beer[] = [];
-  selectedBeer = null;
+  masterAnimalList: Animal[] = [];
+  selectedAnimal = null;
   pints = this.pints;
 
   finishedEditing() {
-    this.selectedBeer = null;
+    this.selectedAnimal = null;
   }
 
-  editBeer(clickedBeer) {
-    this.selectedBeer = clickedBeer;
+  editAnimal(clickedAnimal) {
+    this.selectedAnimal = clickedAnimal;
   }
 
-  addBeer(newBeerFromChild: Beer) {
-    this.masterBeerList.push(newBeerFromChild);
+  addAnimal(newAnimalFromChild: Animal) {
+    this.masterAnimalList.push(newAnimalFromChild);
   }
 
 }

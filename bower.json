@@ -1,12 +1,12 @@
 {
-  "name": "taproom",
-  "description": "An application for managing the stock of a taproom",
+  "name": "Zoo Tracking",
+  "description": "An application for tracking the animals in a local zoo.",
   "main": "",
   "authors": [
-    "Connor Larsen and Isabella Abatgis"
+    "Isabella Abatgis"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/conesgnomes/taproom-angular-2",
+  "homepage": "https://github.com/sigtaba/zoo-tracking",
   "ignore": [
     "**/.*",
     "node_modules",
