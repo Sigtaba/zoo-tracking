@@ -16,6 +16,19 @@ OR you can:
 * enter the command gulp build
 * enter the command gulp serve
 
+## Features:
+
+* Users can view list of animals
+* Users can add animals
+* Users can edit animal properties
+* Users can filter animal list by animal age drop-down list
+
+## Features on Wishlist:
+
+* Users could filter by any property
+* Animals would display just name and species, additional info would display on click
+* Timestamp when animals are added
+
 ## Bugs:
 No known bugs
 
