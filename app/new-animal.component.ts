@@ -5,19 +5,24 @@ import { Animal } from './animal.model';
   selector: 'new-animal',
   template: `
     <h1>Add a new animal</h1>
-    <input #name type="text" />
-    <input #brand type="text" />
-    <input #price type="number" />
-    <input #abv type="number" />
-    <button (click)="addAnimal(name.value,brand.value,price.value,abv.value); name.value=''; brand.value=''; price.value=''; abv.value='';">Add Animal</button>
+    <input #species type="text" placeholder="Species"/>
+    <input #name type="text" placeholder="Name"/>
+    <input #age type="number" placeholder="Age"/>
+    <input #diet type="text" placeholder="Diet"/>
+    <input #location type="text" placeholder="Location in Zoo"/>
+    <input #caretakers type="number" placeholder="Amount of Caretakers"/>
+    <input #sex type="text" placeholder="Sex"/>
+    <input #like type=text placeholder="Likes"/>
+    <input #dislike type="text" placeholder="Dislikes"/>
+    <button (click)="addAnimal(species.value,name.value,age.value,diet.value,location.value,caretakers.value,sex.value,like.value,dislike.value); name.value=''; species.value=''; age.value=''; diet.value=''; location.value=''; caretakers.value=''; sex.value=''; like.value=''; dislike.value='';">Add Animal</button>
   `
 })
 
 export class NewAnimalComponent {
   @Output() newAnimalSender = new EventEmitter();
 
-  addAnimal(name: string, brand: string, price: number, abv: number, pints: number) {
-    var newAnimalToAdd: Animal = new Animal(name, brand, price, abv, pints);
+  addAnimal(species:string, name: string, age: number, diet: string, location:string, caretakers: number, sex: string, like: string, dislike: string) {
+    var newAnimalToAdd: Animal = new Animal(species, name, age, diet, location, caretakers, sex, like, dislike);
     this.newAnimalSender.emit(newAnimalToAdd);
   }
 }
