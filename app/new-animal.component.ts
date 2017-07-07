@@ -9,10 +9,10 @@ import { Animal } from './animal.model';
       <input #species type="text" placeholder="Species"/>
       <input #name type="text" placeholder="Name"/>
       <input #age type="number" placeholder="Age"/>
+      <input #sex type="text" placeholder="Sex"/>
       <input #diet type="text" placeholder="Diet"/>
       <input #location type="text" placeholder="Location in Zoo"/>
       <input #caretakers type="number" placeholder="Amount of Caretakers"/>
-      <input #sex type="text" placeholder="Sex"/>
       <input #like type=text placeholder="Likes"/>
       <input #dislike type="text" placeholder="Dislikes"/>
       <button (click)="addAnimal(species.value,name.value,age.value,diet.value,location.value,caretakers.value,sex.value,like.value,dislike.value); name.value=''; species.value=''; age.value=''; diet.value=''; location.value=''; caretakers.value=''; sex.value=''; like.value=''; dislike.value='';">Add Animal</button>
